@@ -3,11 +3,8 @@ config:
   project_name: joaco-test-react
 
 steps:
-  lint:
-    - ln -sfn /home/node/node_modules node_modules
-    - npm run lint
-    - npm run lint-scss
-
+  metrics:
+    -build job: 'metrics'
 environment:
   GIT_COMMITTER_NAME: a
   GIT_COMMITTER_EMAIL: b
